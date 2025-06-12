@@ -35,7 +35,7 @@
   <div class="product mb-30 engoj_grid_parent relative">
     <div class="img-product relative" >      
         <a  href="{{ product.url | within: collection }}" class="engoj_find_img">
-          <img style="width: 100%" data-src="{{ product.featured_image.src | img_url: 'master' }}" class="lazyload w-100 img-responsive" alt="{{ product.featured_image.alt | escape }}">
+          <img style="width: 100%" data-src="{{ product.featured_image.src | img_url: 'master' }}" class="lazyload w-100 img-responsive first-image" alt="{{ product.featured_image.alt | escape }}">
           {% for image in product.images %}
           {% if forloop.last %}
           <img style="width: 100%" data-src="{{ image.src | product_img_url: 'master' }}" class="lazyload w-100 img-responsive absolute img-product-hover" alt="{{ product.featured_image.alt | escape }}">

@@ -11,6 +11,12 @@
   -webkit-transition: all 0.3s linear 0s;
 }
 
+.first-image {
+  transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  -webkit-transition: all 0.3s linear 0s;
+}
+
 /* Add styles to control image visibility on hover */
 .product-item-v1:hover .img-product-hover,
 .product-item-v2:hover .img-product-hover,
@@ -24,6 +30,7 @@
 .product-item-v10:hover .img-product-hover {
   opacity: 1;
   visibility: visible;
+  z-index: 2;
 }
 
 /* Hide first image on hover */
@@ -37,6 +44,22 @@
 .product-item-v8:hover .engoj_find_img > img:first-child:not(.img-product-hover),
 .product-item-v9:hover .engoj_find_img > img:first-child:not(.img-product-hover),
 .product-item-v10:hover .engoj_find_img > img:first-child:not(.img-product-hover) {
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+}
+
+/* Specific rule for the first-image class */
+.product-item-v1:hover .first-image,
+.product-item-v2:hover .first-image,
+.product-item-v3:hover .first-image,
+.product-item-v4:hover .first-image,
+.product-item-v5:hover .first-image,
+.product-item-v6:hover .first-image,
+.product-item-v7:hover .first-image,
+.product-item-v8:hover .first-image,
+.product-item-v9:hover .first-image,
+.product-item-v10:hover .first-image {
   opacity: 0;
   visibility: hidden;
 }

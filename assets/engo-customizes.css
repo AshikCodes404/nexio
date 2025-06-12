@@ -5773,6 +5773,23 @@ p.price-product{
 .product-item-v10:hover .img-product-hover{
   opacity:1;
   visibility:visible;
+  z-index:2;
+}
+
+/* Hide first image on hover */
+.product-item-v1:hover .first-image,
+.product-item-v2:hover .first-image,
+.product-item-v3:hover .first-image,
+.product-item-v4:hover .first-image,
+.product-item-v5:hover .first-image,
+.product-item-v6:hover .first-image,
+.product-item-v7:hover .first-image,
+.product-item-v8:hover .first-image,
+.product-item-v9:hover .first-image,
+.product-item-v10:hover .first-image {
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
 }
 
 .product-item-v10 .img-product{
