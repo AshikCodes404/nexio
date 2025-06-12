@@ -1,0 +1,232 @@
+/* Remove hover effects for all product items on homepage */
+.product-item-v1:hover .product-icon-action,
+.product-item-v2:hover .product-icon-action,
+.product-item-v3:hover .product-icon-action,
+.product-item-v4:hover .product-icon-action,
+.product-item-v5:hover .product-icon-action,
+.product-item-v6:hover .product-icon-action {
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+.product-item-v1:hover .variant-product,
+.product-item-v2:hover .variant-product,
+.product-item-v3:hover .variant-product,
+.product-item-v4:hover .variant-product,
+.product-item-v5:hover .variant-product,
+.product-item-v6:hover .variant-product {
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+.product-item-v1:hover .des-font,
+.product-item-v2:hover .des-font,
+.product-item-v3:hover .des-font,
+.product-item-v4:hover .des-font,
+.product-item-v5:hover .des-font,
+.product-item-v6:hover .des-font {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.product-item-v1:hover .price-product,
+.product-item-v2:hover .price-product,
+.product-item-v3:hover .price-product,
+.product-item-v4:hover .price-product,
+.product-item-v5:hover .price-product,
+.product-item-v6:hover .price-product {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.product-item-v1:hover .sold-out,
+.product-item-v2:hover .sold-out,
+.product-item-v3:hover .sold-out,
+.product-item-v4:hover .sold-out,
+.product-item-v5:hover .sold-out,
+.product-item-v6:hover .sold-out {
+  transform: translate(-50%,-50%) rotate(45deg) scale(0) !important;
+}
+
+/* Remove this block to allow image hover effect to work */
+/* .product-item-v1:hover .img-product-hover,
+.product-item-v2:hover .img-product-hover,
+.product-item-v3:hover .img-product-hover,
+.product-item-v4:hover .img-product-hover,
+.product-item-v5:hover .img-product-hover,
+.product-item-v6:hover .img-product-hover {
+  opacity: 0 !important;
+  visibility: hidden !important;
+} */
+
+/* Make regular product info always visible for all product types */
+.product-item-v1 .price-product,
+.product-item-v2 .price-product,
+.product-item-v3 .price-product,
+.product-item-v4 .price-product,
+.product-item-v5 .price-product,
+.product-item-v6 .price-product {
+  opacity: 1 !important;
+  visibility: visible !important;
+  position: static !important;
+}
+
+.product-item-v1 .des-font,
+.product-item-v2 .des-font,
+.product-item-v3 .des-font,
+.product-item-v4 .des-font,
+.product-item-v5 .des-font,
+.product-item-v6 .des-font {
+  position: static !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Remove hover transform effects */
+.product-item-v1:hover .product-icon-action .add-to-cart,
+.product-item-v1:hover .product-icon-action .add-wishlist,
+.product-item-v1:hover .product-icon-action .quick-view,
+.product-item-v2:hover .product-icon-action .add-to-cart,
+.product-item-v2:hover .product-icon-action .add-wishlist,
+.product-item-v2:hover .product-icon-action .quick-view,
+.product-item-v3:hover .product-icon-action .add-to-cart,
+.product-item-v3:hover .product-icon-action .add-wishlist,
+.product-item-v3:hover .product-icon-action .quick-view,
+.product-item-v4:hover .product-icon-action .add-to-cart,
+.product-item-v4:hover .product-icon-action .add-wishlist,
+.product-item-v4:hover .product-icon-action .quick-view,
+.product-item-v5:hover .product-icon-action .add-to-cart,
+.product-item-v5:hover .product-icon-action .add-wishlist,
+.product-item-v5:hover .product-icon-action .quick-view,
+.product-item-v6:hover .product-icon-action .add-to-cart,
+.product-item-v6:hover .product-icon-action .add-wishlist,
+.product-item-v6:hover .product-icon-action .quick-view {
+  transform: none !important;
+}
+
+/* Remove any background color changes on hover */
+.product-item-v1 .product-icon-action .add-to-cart a:hover,
+.product-item-v1 .product-icon-action .add-to-cart button:hover,
+.product-item-v1 .product-icon-action .add-wishlist a:hover,
+.product-item-v1 .product-icon-action .add-wishlist button:hover,
+.product-item-v1 .product-icon-action .quick-view a:hover,
+.product-item-v1 .product-icon-action .quick-view button:hover,
+.product-item-v2 .product-icon-action .add-to-cart a:hover,
+.product-item-v2 .product-icon-action .add-to-cart button:hover,
+.product-item-v2 .product-icon-action .add-wishlist a:hover,
+.product-item-v2 .product-icon-action .add-wishlist button:hover,
+.product-item-v2 .product-icon-action .quick-view a:hover,
+.product-item-v2 .product-icon-action .quick-view button:hover,
+.product-item-v3 .product-icon-action .add-to-cart a:hover,
+.product-item-v3 .product-icon-action .add-to-cart button:hover,
+.product-item-v3 .product-icon-action .add-wishlist a:hover,
+.product-item-v3 .product-icon-action .add-wishlist button:hover,
+.product-item-v3 .product-icon-action .quick-view a:hover,
+.product-item-v3 .product-icon-action .quick-view button:hover,
+.product-item-v4 .product-icon-action .add-to-cart a:hover,
+.product-item-v4 .product-icon-action .add-to-cart button:hover,
+.product-item-v4 .product-icon-action .add-wishlist a:hover,
+.product-item-v4 .product-icon-action .add-wishlist button:hover,
+.product-item-v4 .product-icon-action .quick-view a:hover,
+.product-item-v4 .product-icon-action .quick-view button:hover,
+.product-item-v5 .product-icon-action .add-to-cart a:hover,
+.product-item-v5 .product-icon-action .add-to-cart button:hover,
+.product-item-v5 .product-icon-action .add-wishlist a:hover,
+.product-item-v5 .product-icon-action .add-wishlist button:hover,
+.product-item-v5 .product-icon-action .quick-view a:hover,
+.product-item-v5 .product-icon-action .quick-view button:hover,
+.product-item-v6 .product-icon-action .add-to-cart a:hover,
+.product-item-v6 .product-icon-action .add-to-cart button:hover,
+.product-item-v6 .product-icon-action .add-wishlist a:hover,
+.product-item-v6 .product-icon-action .add-wishlist button:hover,
+.product-item-v6 .product-icon-action .quick-view a:hover,
+.product-item-v6 .product-icon-action .quick-view button:hover {
+  background-color: #fff !important;
+  transition: none !important;
+}
+
+/* Remove text/icon color changes on hover */
+.product-item-v1 .product-icon-action .add-to-cart a:hover i,
+.product-item-v1 .product-icon-action .add-to-cart button:hover i,
+.product-item-v1 .product-icon-action .add-wishlist a:hover i,
+.product-item-v1 .product-icon-action .add-wishlist button:hover i,
+.product-item-v1 .product-icon-action .quick-view a:hover i,
+.product-item-v1 .product-icon-action .quick-view button:hover i,
+.product-item-v2 .product-icon-action .add-to-cart a:hover i,
+.product-item-v2 .product-icon-action .add-to-cart button:hover i,
+.product-item-v2 .product-icon-action .add-wishlist a:hover i,
+.product-item-v2 .product-icon-action .add-wishlist button:hover i,
+.product-item-v2 .product-icon-action .quick-view a:hover i,
+.product-item-v2 .product-icon-action .quick-view button:hover i,
+.product-item-v3 .product-icon-action .add-to-cart a:hover i,
+.product-item-v3 .product-icon-action .add-to-cart button:hover i,
+.product-item-v3 .product-icon-action .add-wishlist a:hover i,
+.product-item-v3 .product-icon-action .add-wishlist button:hover i,
+.product-item-v3 .product-icon-action .quick-view a:hover i,
+.product-item-v3 .product-icon-action .quick-view button:hover i,
+.product-item-v4 .product-icon-action .add-to-cart a:hover i,
+.product-item-v4 .product-icon-action .add-to-cart button:hover i,
+.product-item-v4 .product-icon-action .add-wishlist a:hover i,
+.product-item-v4 .product-icon-action .add-wishlist button:hover i,
+.product-item-v4 .product-icon-action .quick-view a:hover i,
+.product-item-v4 .product-icon-action .quick-view button:hover i,
+.product-item-v5 .product-icon-action .add-to-cart a:hover i,
+.product-item-v5 .product-icon-action .add-to-cart button:hover i,
+.product-item-v5 .product-icon-action .add-wishlist a:hover i,
+.product-item-v5 .product-icon-action .add-wishlist button:hover i,
+.product-item-v5 .product-icon-action .quick-view a:hover i,
+.product-item-v5 .product-icon-action .quick-view button:hover i,
+.product-item-v6 .product-icon-action .add-to-cart a:hover i,
+.product-item-v6 .product-icon-action .add-to-cart button:hover i,
+.product-item-v6 .product-icon-action .add-wishlist a:hover i,
+.product-item-v6 .product-icon-action .add-wishlist button:hover i,
+.product-item-v6 .product-icon-action .quick-view a:hover i,
+.product-item-v6 .product-icon-action .quick-view button:hover i {
+  color: inherit !important;
+  transition: none !important;
+}
+
+/* Remove SVG fill changes on hover */
+.product-item-v1 .product-icon-action .add-to-cart a:hover svg,
+.product-item-v1 .product-icon-action .add-to-cart button:hover svg,
+.product-item-v1 .product-icon-action .add-wishlist a:hover svg,
+.product-item-v1 .product-icon-action .add-wishlist button:hover svg,
+.product-item-v1 .product-icon-action .quick-view a:hover svg,
+.product-item-v1 .product-icon-action .quick-view button:hover svg,
+.product-item-v2 .product-icon-action .add-to-cart a:hover svg,
+.product-item-v2 .product-icon-action .add-to-cart button:hover svg,
+.product-item-v2 .product-icon-action .add-wishlist a:hover svg,
+.product-item-v2 .product-icon-action .add-wishlist button:hover svg,
+.product-item-v2 .product-icon-action .quick-view a:hover svg,
+.product-item-v2 .product-icon-action .quick-view button:hover svg,
+.product-item-v3 .product-icon-action .add-to-cart a:hover svg,
+.product-item-v3 .product-icon-action .add-to-cart button:hover svg,
+.product-item-v3 .product-icon-action .add-wishlist a:hover svg,
+.product-item-v3 .product-icon-action .add-wishlist button:hover svg,
+.product-item-v3 .product-icon-action .quick-view a:hover svg,
+.product-item-v3 .product-icon-action .quick-view button:hover svg,
+.product-item-v4 .product-icon-action .add-to-cart a:hover svg,
+.product-item-v4 .product-icon-action .add-to-cart button:hover svg,
+.product-item-v4 .product-icon-action .add-wishlist a:hover svg,
+.product-item-v4 .product-icon-action .add-wishlist button:hover svg,
+.product-item-v4 .product-icon-action .quick-view a:hover svg,
+.product-item-v4 .product-icon-action .quick-view button:hover svg,
+.product-item-v5 .product-icon-action .add-to-cart a:hover svg,
+.product-item-v5 .product-icon-action .add-to-cart button:hover svg,
+.product-item-v5 .product-icon-action .add-wishlist a:hover svg,
+.product-item-v5 .product-icon-action .add-wishlist button:hover svg,
+.product-item-v5 .product-icon-action .quick-view a:hover svg,
+.product-item-v5 .product-icon-action .quick-view button:hover svg,
+.product-item-v6 .product-icon-action .add-to-cart a:hover svg,
+.product-item-v6 .product-icon-action .add-to-cart button:hover svg,
+.product-item-v6 .product-icon-action .add-wishlist a:hover svg,
+.product-item-v6 .product-icon-action .add-wishlist button:hover svg,
+.product-item-v6 .product-icon-action .quick-view a:hover svg,
+.product-item-v6 .product-icon-action .quick-view button:hover svg {
+  fill: inherit !important;
+}
+
+/* Hide quickview and other action buttons completely */
+.product-icon-action {
+  display: none !important;
+} 
